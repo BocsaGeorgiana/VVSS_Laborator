@@ -16,10 +16,10 @@ public class KitchenGUIController {
     @FXML
     public Button ready;
 
-    public static  ObservableList<String> order = FXCollections.observableArrayList();
+    protected static  ObservableList<String> order = FXCollections.observableArrayList();
     private Object selectedOrder;
     private Calendar now = Calendar.getInstance();
-    private String extractedTableNumberString = new String();
+    private String extractedTableNumberString;
     private int extractedTableNumberInteger;
     //thread for adding data to kitchenOrderList
     public  Thread addOrders = new Thread(new Runnable() {
@@ -47,21 +47,29 @@ public class KitchenGUIController {
         addOrders.start();
         //Controller for Cook Button
         cook.setOnAction(event -> {
-            selectedOrder = kitchenOrdersList.getSelectionModel().getSelectedItem();
-            kitchenOrdersList.getItems().remove(selectedOrder);
-            kitchenOrdersList.getItems().add(selectedOrder.toString()
-                     .concat(" Cooking started at: ").toUpperCase()
-                     .concat(now.get(Calendar.HOUR)+":"+now.get(Calendar.MINUTE)));
+            try {
+                selectedOrder = kitchenOrdersList.getSelectionModel().getSelectedItem();
+                kitchenOrdersList.getItems().remove(selectedOrder);
+                kitchenOrdersList.getItems().add(selectedOrder.toString()
+                        .concat(" Cooking started at: ").toUpperCase()
+                        .concat(now.get(Calendar.HOUR) + ":" + now.get(Calendar.MINUTE)));
+            }catch (Exception e){
+                System.out.println("Selecteaza comanda");
+            }
         });
         //Controller for Ready Button
         ready.setOnAction(event -> {
-            selectedOrder = kitchenOrdersList.getSelectionModel().getSelectedItem();
-            kitchenOrdersList.getItems().remove(selectedOrder);
-            extractedTableNumberString = selectedOrder.toString().subSequence(5, 6).toString();
-            extractedTableNumberInteger = Integer.valueOf(extractedTableNumberString);
-            System.out.println("--------------------------");
-            System.out.println("Table " + extractedTableNumberInteger +" ready at: " + now.get(Calendar.HOUR)+":"+now.get(Calendar.MINUTE));
-            System.out.println("--------------------------");
+            try {
+                selectedOrder = kitchenOrdersList.getSelectionModel().getSelectedItem();
+                kitchenOrdersList.getItems().remove(selectedOrder);
+                extractedTableNumberString = selectedOrder.toString().subSequence(5, 6).toString();
+                extractedTableNumberInteger = Integer.valueOf(extractedTableNumberString);
+                System.out.println("--------------------------");
+                System.out.println("Table " + extractedTableNumberInteger + " ready at: " + now.get(Calendar.HOUR) + ":" + now.get(Calendar.MINUTE));
+                System.out.println("--------------------------");
+            }catch (Exception e){
+                System.out.println("Selecteaza comanda");
+            }
         });
     }
 }
