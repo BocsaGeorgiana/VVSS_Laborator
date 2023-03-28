@@ -104,7 +104,11 @@ public class OrdersGUIController {
             System.out.println("Total: " + getTotalAmount());
             System.out.println("--------------------------");
             PaymentAlert pay = new PaymentAlert(service);
-            pay.showPaymentAlert(tableNumber, getTotalAmount());
+            try {
+                pay.showPaymentAlert(tableNumber, getTotalAmount());
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         });
     }
 
