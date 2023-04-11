@@ -12,6 +12,9 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.mockito.Mockito;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import static org.mockito.Mockito.mock;
@@ -144,6 +147,52 @@ class PizzaServiceTest {
         } catch (Exception e) {
             assert e.getMessage().equals("Table must be in [1,8]. Type must be in {CASH/CARD}. Amount must be greather than 0.");
         }
+    }
+
+    //Lab3
+    @Test
+    void getTotalAmountValid_1() throws IOException {
+        PaymentType paymentType = PaymentType.Cash;
+        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("data/payments.txt"));
+        bufferedWriter.write("0,Cash,10.0\n");
+        bufferedWriter.write("1,Card,10.0\n");
+        bufferedWriter.write("3,Cash,12.0\n");
+        bufferedWriter.write("2,Card,100.0\n");
+        bufferedWriter.close();
+        setUp();
+
+        assertEquals(22.0, service.getTotalAmount(paymentType));
+    }
+
+    @Test
+    void getTotalAmountValid_2() throws IOException {
+        PaymentType paymentType = PaymentType.Cash;
+        setUp();
+
+        assertEquals(0.0, service.getTotalAmount(paymentType));
+    }
+
+    @Test
+    void getTotalAmountValid_3() throws IOException {
+        PaymentType paymentType = PaymentType.Cash;
+        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("data/payments.txt"));
+        bufferedWriter.write("1,Card,10.0\n");
+        bufferedWriter.write("2,Card,100.0\n");
+        bufferedWriter.close();
+        setUp();
+
+        assertEquals(0.0, service.getTotalAmount(paymentType));
+    }
+
+    @Test
+    void getTotalAmountInvalid() throws IOException {
+        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("data/payments.txt"));
+        bufferedWriter.write("1,Cash,10.0\n");
+        bufferedWriter.write("2,Cash,100.0\n");
+        bufferedWriter.close();
+        setUp();
+
+        assertThrows(IllegalArgumentException.class, () -> service.getTotalAmount(PaymentType.valueOf("cash")));
     }
 
 }
