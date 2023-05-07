@@ -26,13 +26,9 @@ public class PizzaService {
         return payRepo.getAll();
     }
 
-    public void addPayment(int table, PaymentType type, double amount) throws Exception {
-        Payment payment = new Payment(table, type, amount);
-        if (payment.getTableNumber() >= 1 && payment.getTableNumber() <= 8 && payment.getAmount() > 0) {
-            payRepo.add(payment);
-        } else {
-            throw new Exception("Table must be in [1,8]. Type must be in {CASH/CARD}. Amount must be greather than 0.");
-        }
+    public void addPayment(int table, PaymentType type, double amount){
+        Payment payment= new Payment(table, type, amount);
+        payRepo.add(payment);
     }
 
     public double getTotalAmount(PaymentType type) {
