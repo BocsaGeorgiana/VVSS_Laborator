@@ -1,0 +1,10 @@
+steps\CatalogSteps.class
+steps\LoginSteps.class
+pages\LoginPage.class
+pages\RegisterPage.class
+tests\RegisterTests.class
+steps\LogoutSteps.class
+pages\CatalogPage.class
+pages\LogoutPage.class
+tests\RegressionTest.class
+steps\RegisterSteps.class

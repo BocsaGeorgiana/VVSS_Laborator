@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="tests.RegressionTest" skipped="0" tests="1" time="24.41" timestamp="2023-05-23 09:52:02"><testcase classname="tests.RegressionTest" name="Login add wishlist remove wishlist logout"/></testsuite>

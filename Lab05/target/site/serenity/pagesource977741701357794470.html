@@ -1,0 +1,518 @@
+<html lang='en'><head><link href='prism/prism.css' rel='stylesheet' /></head><body><script src='prism/prism.js'></script><body><div><pre><code class='language-html'>&lt;html lang="en"&gt;<br/>
+ &lt;head&gt;<br/>
+  &lt;script async src="//www.google-analytics.com/analytics.js"&gt;&lt;/script&gt;<br/>
+  &lt;script&gt;<br/>
+    var BASE_URL = 'https://magento.softwaretestingboard.com/';<br/>
+    var require = {<br/>
+        "baseUrl": "https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US"<br/>
+    };<br/>
+&lt;/script&gt;<br/>
+  &lt;meta charset="utf-8"&gt;<br/>
+  &lt;meta name="title" content="Create New Customer Account"&gt;<br/>
+  &lt;meta name="robots" content="INDEX,FOLLOW"&gt;<br/>
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;<br/>
+  &lt;meta name="format-detection" content="telephone=no"&gt;<br/>
+  &lt;title&gt;Create New Customer Account&lt;/title&gt;<br/>
+  &lt;link rel="stylesheet" type="text/css" media="all" href="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/mage/calendar.css"&gt;<br/>
+  &lt;link rel="stylesheet" type="text/css" media="all" href="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/css/styles-m.css"&gt;<br/>
+  &lt;link rel="stylesheet" type="text/css" media="screen and (min-width: 768px)" href="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/css/styles-l.css"&gt;<br/>
+  &lt;link rel="stylesheet" type="text/css" media="print" href="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/css/print.css"&gt;<br/>
+  &lt;link rel="icon" type="image/x-icon" href="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Theme/favicon.ico"&gt;<br/>
+  &lt;link rel="shortcut icon" type="image/x-icon" href="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Theme/favicon.ico"&gt;<br/>
+  &lt;script type="text/javascript" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/requirejs/require.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/mage/requirejs/mixins.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/requirejs-config.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/mage/polyfill.js"&gt;&lt;/script&gt;<br/>
+  &lt;link rel="preload" as="font" crossorigin="anonymous" href="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/fonts/opensans/light/opensans-300.woff2"&gt;<br/>
+  &lt;link rel="preload" as="font" crossorigin="anonymous" href="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/fonts/opensans/regular/opensans-400.woff2"&gt;<br/>
+  &lt;link rel="preload" as="font" crossorigin="anonymous" href="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/fonts/opensans/semibold/opensans-600.woff2"&gt;<br/>
+  &lt;link rel="preload" as="font" crossorigin="anonymous" href="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/fonts/opensans/bold/opensans-700.woff2"&gt;<br/>
+  &lt;link rel="preload" as="font" crossorigin="anonymous" href="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/fonts/Luma-Icons.woff2"&gt;<br/>
+  &lt;link rel="stylesheet" type="text/css" media="all" href="https://magento.softwaretestingboard.com/pub/media/styles.css"&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="jquery/jquery.mobile.custom" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/jquery/jquery.mobile.custom.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="mage/common" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/mage/common.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="mage/dataPost" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/mage/dataPost.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="mage/bootstrap" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/mage/bootstrap.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="jquery" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/jquery.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="mage/translate-inline" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/mage/translate-inline.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Translation/js/mage-translation-dictionary" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Translation/js/mage-translation-dictionary.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Theme/js/responsive" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Theme/js/responsive.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Theme/js/theme" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Theme/js/theme.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="mage/mage" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/mage/mage.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="domReady" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/requirejs/domReady.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="mage/apply/main" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/mage/apply/main.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bootstrap" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Ui/js/lib/knockout/bootstrap.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="mage/template" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/mage/template.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Ui/js/modal/confirm" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Ui/js/modal/confirm.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="jquery-ui-modules/widget" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/jquery/ui-modules/widget.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="jquery/patches/jquery" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/jquery/patches/jquery.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="mage/translate" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/mage/translate.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="jquery/jquery-migrate" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/jquery/jquery-migrate.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="jquery-ui-modules/dialog" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/jquery/ui-modules/dialog.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="jquery/patches/jquery-ui" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/jquery/patches/jquery-ui.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="mage/tabs" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/mage/tabs.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="mage/smart-keyboard-handler" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/mage/smart-keyboard-handler.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="mage/ie-class-fixer" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/mage/ie-class-fixer.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="text" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/mage/requirejs/text.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="knockoutjs/knockout" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/knockoutjs/knockout.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="knockoutjs/knockout-es5" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/knockoutjs/knockout-es5.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="underscore" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/underscore.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Ui/js/modal/modal" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Ui/js/modal/modal.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="matchMedia" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/matchMedia.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/template/engine" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Ui/js/lib/knockout/template/engine.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/bootstrap" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Ui/js/lib/knockout/bindings/bootstrap.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/extender/observable_array" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Ui/js/lib/knockout/extender/observable_array.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/extender/bound-nodes" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Ui/js/lib/knockout/extender/bound-nodes.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="mage/apply/scripts" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/mage/apply/scripts.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="jquery-ui-modules/button" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/jquery/ui-modules/button.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="jquery-ui-modules/draggable" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/jquery/ui-modules/draggable.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="jquery-ui-modules/position" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/jquery/ui-modules/position.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="jquery-ui-modules/resizable" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/jquery/ui-modules/resizable.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="jquery-ui-modules/core" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/jquery/ui-modules/core.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="mage/collapsible" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/mage/collapsible.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/key-codes" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Ui/js/lib/key-codes.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="knockoutjs/knockout-repeat" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/knockoutjs/knockout-repeat.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="knockoutjs/knockout-fast-foreach" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/knockoutjs/knockout-fast-foreach.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/template/renderer" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Ui/js/lib/knockout/template/renderer.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/resizable" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Ui/js/lib/knockout/bindings/resizable.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/i18n" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Ui/js/lib/knockout/bindings/i18n.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/scope" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Ui/js/lib/knockout/bindings/scope.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/range" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Ui/js/lib/knockout/bindings/range.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/mage-init" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Ui/js/lib/knockout/bindings/mage-init.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/keyboard" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Ui/js/lib/knockout/bindings/keyboard.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/optgroup" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Ui/js/lib/knockout/bindings/optgroup.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/after-render" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Ui/js/lib/knockout/bindings/after-render.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/autoselect" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Ui/js/lib/knockout/bindings/autoselect.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/datepicker" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Ui/js/lib/knockout/bindings/datepicker.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/outer_click" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Ui/js/lib/knockout/bindings/outer_click.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/fadeVisible" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Ui/js/lib/knockout/bindings/fadeVisible.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/collapsible" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Ui/js/lib/knockout/bindings/collapsible.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/staticChecked" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Ui/js/lib/knockout/bindings/staticChecked.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/simple-checked" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Ui/js/lib/knockout/bindings/simple-checked.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/bind-html" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Ui/js/lib/knockout/bindings/bind-html.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/tooltip" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Ui/js/lib/knockout/bindings/tooltip.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/color-picker" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Ui/js/lib/knockout/bindings/color-picker.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/template/observable_source" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Ui/js/lib/knockout/template/observable_source.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/logger/console-logger" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Ui/js/lib/logger/console-logger.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="mage/validation/validation" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/mage/validation/validation.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="jquery/jquery-storageapi" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Cookie/js/jquery.storageapi.extended.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="mage/utils/wrapper" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/mage/utils/wrapper.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/core/events" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Ui/js/lib/core/events.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="es6-collections" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/es6-collections.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="jquery-ui-modules/mouse" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/jquery/ui-modules/mouse.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="mage/utils/main" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/mage/utils/main.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/registry/registry" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Ui/js/lib/registry/registry.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/view/utils/async" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Ui/js/lib/view/utils/async.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="jquery-ui-modules/slider" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/jquery/ui-modules/slider.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="spectrum" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/jquery/spectrum/spectrum.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="tinycolor" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/jquery/spectrum/tinycolor.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/template/loader" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Ui/js/lib/knockout/template/loader.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/core/storage/local" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Ui/js/lib/core/storage/local.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/core/class" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Ui/js/lib/core/class.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="mage/calendar" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/mage/calendar.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="moment" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/moment.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="mage/validation" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/mage/validation.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/logger/logger" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Ui/js/lib/logger/logger.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/logger/entry-factory" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Ui/js/lib/logger/entry-factory.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/logger/console-output-handler" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Ui/js/lib/logger/console-output-handler.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/logger/formatter" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Ui/js/lib/logger/formatter.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/logger/message-pool" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Ui/js/lib/logger/message-pool.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/logger/levels-pool" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Ui/js/lib/logger/levels-pool.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/logger/logger-utils" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Ui/js/lib/logger/logger-utils.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="jquery/jquery.cookie" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/jquery/jquery.cookie.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="jquery/jquery.storageapi.min" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/jquery/jquery.storageapi.min.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="mage/utils/arrays" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/mage/utils/arrays.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="mage/utils/compare" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/mage/utils/compare.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="mage/utils/misc" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/mage/utils/misc.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="mage/utils/objects" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/mage/utils/objects.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="mage/utils/strings" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/mage/utils/strings.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="mage/utils/template" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/mage/utils/template.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="jquery-ui-modules/datepicker" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/jquery/ui-modules/datepicker.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="jquery-ui-modules/timepicker" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/jquery/ui-modules/timepicker.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/logger/entry" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Ui/js/lib/logger/entry.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/view/utils/dom-observer" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Ui/js/lib/view/utils/dom-observer.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/view/utils/bindings" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Ui/js/lib/view/utils/bindings.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="jquery/validate" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/jquery/jquery.validate.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="FormData" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/FormData.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="MutationObserver" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/MutationObserver.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="jquery/jquery.metadata" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/jquery/jquery.metadata.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="mage/loader" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/mage/loader.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_PageCache/js/page-cache" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_PageCache/js/page-cache.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Cookie/js/require-cookie" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Cookie/js/require-cookie.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Ui/js/core/app" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Ui/js/core/app.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="mage/dropdown" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/mage/dropdown.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Search/js/form-mini" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Search/js/form-mini.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="mage/menu" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/mage/menu.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="mage/trim-input" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/mage/trim-input.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Customer/js/password-strength-indicator" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Customer/js/password-strength-indicator.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_GoogleAnalytics/js/google-analytics" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_GoogleAnalytics/js/google-analytics.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="mage/cookies" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/mage/cookies.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Ui/js/block-loader" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Ui/js/block-loader.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Customer/js/section-config" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Customer/js/section-config.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Customer/js/invalidation-processor" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Customer/js/invalidation-processor.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Customer/js/block-submit-on-send" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Customer/js/block-submit-on-send.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Customer/js/customer-data" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Customer/js/customer-data.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Persistent/js/view/customer-data-mixin" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Persistent/js/view/customer-data-mixin.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Ui/js/modal/alert" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Ui/js/modal/alert.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Ui/js/core/renderer/types" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Ui/js/core/renderer/types.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Ui/js/core/renderer/layout" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Ui/js/core/renderer/layout.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Customer/js/zxcvbn" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Customer/js/zxcvbn.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="jquery-ui-modules/menu" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/jquery/ui-modules/menu.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="mage/url" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/mage/url.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="mage/storage" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/mage/storage.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/core/element/element" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Ui/js/lib/core/element/element.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Checkout/js/view/minicart" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Checkout/js/view/minicart.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/core/collection" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Ui/js/lib/core/collection.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Tax/js/view/checkout/minicart/subtotal/totals" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Tax/js/view/checkout/minicart/subtotal/totals.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Msrp/js/view/checkout/minicart/subtotal/totals" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Msrp/js/view/checkout/minicart/subtotal/totals.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Catalog/js/view/image" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Catalog/js/view/image.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Catalog/js/view/compare-products" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Catalog/js/view/compare-products.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Customer/js/view/authentication-popup" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Customer/js/view/authentication-popup.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Captcha/js/view/checkout/loginCaptcha" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Captcha/js/view/checkout/loginCaptcha.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Customer/js/view/customer" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Customer/js/view/customer.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Theme/js/view/messages" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Theme/js/view/messages.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Catalog/js/storage-manager" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Catalog/js/storage-manager.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Ui/js/view/messages" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Ui/js/view/messages.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="MSP_ReCaptcha/js/ui-messages-mixin" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/MSP_ReCaptcha/js/ui-messages-mixin.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/core/element/links" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Ui/js/lib/core/element/links.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Catalog/js/product/storage/storage-service" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Catalog/js/product/storage/storage-service.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Checkout/js/sidebar" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Checkout/js/sidebar.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Captcha/js/view/checkout/defaultCaptcha" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Captcha/js/view/checkout/defaultCaptcha.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Captcha/js/model/captchaList" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Captcha/js/model/captchaList.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Customer/js/action/login" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Customer/js/action/login.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="jquery-ui-modules/effect-blind" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/jquery/ui-modules/effect-blind.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="MSP_ReCaptcha/js/registry" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/MSP_ReCaptcha/js/registry.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="mage/decorate" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/mage/decorate.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Security/js/escaper" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Security/js/escaper.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Ui/js/model/messageList" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Ui/js/model/messageList.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Ui/js/form/form" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Ui/js/form/form.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Customer/js/model/authentication-popup" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Customer/js/model/authentication-popup.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="jquery-ui-modules/effect-fade" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/jquery/ui-modules/effect-fade.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Customer/js/invalidation-rules/website-rule" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Customer/js/invalidation-rules/website-rule.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="jquery-ui-modules/effect" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/jquery/ui-modules/effect.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Captcha/js/model/captcha" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Captcha/js/model/captcha.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/spinner" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Ui/js/lib/spinner.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="mage/requirejs/resolver" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/mage/requirejs/resolver.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Catalog/js/product/storage/ids-storage" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Catalog/js/product/storage/ids-storage.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Catalog/js/product/storage/data-storage" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Catalog/js/product/storage/data-storage.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Catalog/js/product/storage/ids-storage-compare" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Catalog/js/product/storage/ids-storage-compare.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Ui/js/model/messages" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Ui/js/model/messages.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Ui/js/form/adapter" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Ui/js/form/adapter.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Captcha/js/action/refresh" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Captcha/js/action/refresh.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Ui/js/form/adapter/buttons" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Ui/js/form/adapter/buttons.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="Magento_Catalog/js/product/query-builder" src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/Magento_Catalog/js/product/query-builder.js"&gt;&lt;/script&gt;<br/>
+ &lt;/head&gt;<br/>
+ &lt;body data-container="body" class="customer-account-create page-layout-1column"&gt;<br/>
+  &lt;noscript&gt;<br/>
+   &lt;div class="message global noscript"&gt;<br/>
+    &lt;div class="content"&gt;<br/>
+     &lt;p&gt;&lt;strong&gt;JavaScript seems to be disabled in your browser.&lt;/strong&gt; &lt;span&gt;For the best experience on our site, be sure to turn on Javascript in your browser.&lt;/span&gt;&lt;/p&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/div&gt;<br/>
+  &lt;/noscript&gt;<br/>
+  &lt;script&gt;<br/>
+    window.cookiesConfig = window.cookiesConfig || {};<br/>
+    window.cookiesConfig.secure = true;<br/>
+&lt;/script&gt;<br/>
+  &lt;script&gt;<br/>
+    require.config({<br/>
+        map: {<br/>
+            '*': {<br/>
+                wysiwygAdapter: 'mage/adminhtml/wysiwyg/tiny_mce/tinymce4Adapter'<br/>
+            }<br/>
+        }<br/>
+    });<br/>
+&lt;/script&gt;<br/>
+  &lt;div class="page-wrapper"&gt;<br/>
+   &lt;header class="page-header"&gt;<br/>
+    &lt;div class="panel wrapper"&gt;<br/>
+     &lt;div class="panel header"&gt;<br/>
+      &lt;a class="action skip contentarea" href="#contentarea"&gt; &lt;span&gt; Skip to Content &lt;/span&gt; &lt;/a&gt;<br/>
+      &lt;ul class="header links"&gt;<br/>
+       &lt;li class="greet welcome" data-bind="scope: 'customer'"&gt;&lt;!-- ko if: customer().fullname  --&gt;&lt;!-- /ko --&gt; &lt;!-- ko ifnot: customer().fullname  --&gt; &lt;span class="not-logged-in" data-bind="html:&quot;Default welcome msg!&quot;"&gt;Default welcome msg!&lt;/span&gt; &lt;!-- /ko --&gt;&lt;/li&gt;<br/>
+       &lt;li class="authorization-link" data-label="or"&gt;&lt;a href="https://magento.softwaretestingboard.com/customer/account/login/referer/aHR0cHM6Ly9tYWdlbnRvLnNvZnR3YXJldGVzdGluZ2JvYXJkLmNvbS9jdXN0b21lci9hY2NvdW50L2NyZWF0ZS8%2C/"&gt; Sign In &lt;/a&gt;&lt;/li&gt;<br/>
+       &lt;li&gt;&lt;a href="https://magento.softwaretestingboard.com/customer/account/create/"&gt;Create an Account&lt;/a&gt;&lt;/li&gt;<br/>
+      &lt;/ul&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+    &lt;div class="header content"&gt;<br/>
+     &lt;span data-action="toggle-nav" class="action nav-toggle"&gt;&lt;span&gt;Toggle Nav&lt;/span&gt;&lt;/span&gt; &lt;a class="logo" href="https://magento.softwaretestingboard.com/" title="" aria-label="store logo"&gt; &lt;img src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/images/logo.svg" title="" alt=""&gt; &lt;/a&gt;<br/>
+     &lt;div data-block="minicart" class="minicart-wrapper"&gt;&lt;a class="action showcart" href="https://magento.softwaretestingboard.com/checkout/cart/" data-bind="scope: 'minicart_content'"&gt; &lt;span class="text"&gt;My Cart&lt;/span&gt; &lt;span class="counter qty empty" data-bind="css: { empty: !!getCartParam('summary_count') == false &amp;&amp; !isLoading() }, blockLoader: isLoading"&gt; &lt;span class="counter-number"&gt;&lt;!-- ko text: getCartParam('summary_count') --&gt;&lt;!-- /ko --&gt;&lt;/span&gt; &lt;span class="counter-label"&gt; &lt;!-- ko if: getCartParam('summary_count') --&gt;&lt;!-- /ko --&gt; &lt;/span&gt; &lt;/span&gt; &lt;/a&gt;<br/>
+      &lt;script&gt;<br/>
+        window.checkout = {"shoppingCartUrl":"https:\/\/magento.softwaretestingboard.com\/checkout\/cart\/","checkoutUrl":"https:\/\/magento.softwaretestingboard.com\/checkout\/","updateItemQtyUrl":"https:\/\/magento.softwaretestingboard.com\/checkout\/sidebar\/updateItemQty\/","removeItemUrl":"https:\/\/magento.softwaretestingboard.com\/checkout\/sidebar\/removeItem\/","imageTemplate":"Magento_Catalog\/product\/image_with_borders","baseUrl":"https:\/\/magento.softwaretestingboard.com\/","minicartMaxItemsVisible":5,"websiteId":"1","maxItemsToDisplay":10,"storeId":"1","storeGroupId":"1","customerLoginUrl":"https:\/\/magento.softwaretestingboard.com\/customer\/account\/login\/referer\/aHR0cHM6Ly9tYWdlbnRvLnNvZnR3YXJldGVzdGluZ2JvYXJkLmNvbS9jdXN0b21lci9hY2NvdW50L2NyZWF0ZS8%2C\/","isRedirectRequired":false,"autocomplete":"off","captcha":{"user_login":{"isCaseSensitive":false,"imageHeight":50,"imageSrc":"","refreshUrl":"https:\/\/magento.softwaretestingboard.com\/captcha\/refresh\/","isRequired":false,"timestamp":1683809579}}};<br/>
+    &lt;/script&gt;<br/>
+      &lt;div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front mage-dropdown-dialog" tabindex="-1" role="dialog" aria-describedby="ui-id-1" style="display: none;"&gt;<br/>
+       &lt;div class="block block-minicart ui-dialog-content ui-widget-content" data-role="dropdownDialog" id="ui-id-1" style="display: block;"&gt;<br/>
+        &lt;div id="minicart-content-wrapper" data-bind="scope: 'minicart_content'"&gt;&lt;!-- ko template: getTemplate() --&gt;<br/>
+         &lt;div class="block-title"&gt;&lt;strong&gt; &lt;span class="text" data-bind="i18n: 'My Cart'"&gt;My Cart&lt;/span&gt; &lt;span class="qty empty" data-bind="css: { empty: !!getCartParam('summary_count') == false },<br/>
+                       attr: { title: $t('Items in Cart') }, text: getCartParam('summary_count')" title="Items in Cart"&gt;&lt;/span&gt; &lt;/strong&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="block-content"&gt;&lt;button type="button" id="btn-minicart-close" class="action close" data-action="close" data-bind="attr: { title: $t('Close') }" title="Close"&gt; &lt;span data-bind="i18n: 'Close'"&gt;Close&lt;/span&gt; &lt;/button&gt; &lt;!-- ko if: getCartParam('summary_count') --&gt;&lt;!-- /ko --&gt; &lt;!-- ko if: getCartParam('summary_count') --&gt;&lt;!-- /ko --&gt; &lt;!-- ko ifnot: getCartParam('summary_count') --&gt; &lt;strong class="subtitle empty" data-bind="visible: closeSidebar(), i18n: 'You have no items in your shopping cart.'"&gt;You have no items in your shopping cart.&lt;/strong&gt; &lt;!-- ko if: getCartParam('cart_empty_message') --&gt;&lt;!-- /ko --&gt; &lt;!-- /ko --&gt; &lt;!-- ko if: getCartParam('summary_count') --&gt;&lt;!-- /ko --&gt; &lt;!-- ko if: getRegion('promotion').length --&gt;&lt;!-- /ko --&gt;<br/>
+         &lt;/div&gt;&lt;!-- ko foreach: getRegion('sign-in-popup') --&gt;&lt;!-- /ko --&gt; &lt;!-- /ko --&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+     &lt;div class="block block-search"&gt;<br/>
+      &lt;div class="block block-title"&gt;<br/>
+       &lt;strong&gt;Search&lt;/strong&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="block block-content"&gt;<br/>
+       &lt;form class="form minisearch" id="search_mini_form" action="https://magento.softwaretestingboard.com/catalogsearch/result/" method="get"&gt;<br/>
+        &lt;div class="field search"&gt;&lt;label class="label" for="search" data-role="minisearch-label"&gt; &lt;span&gt;Search&lt;/span&gt; &lt;/label&gt;<br/>
+         &lt;div class="control"&gt;&lt;input id="search" type="text" name="q" value="" placeholder="Search entire store here..." class="input-text" maxlength="128" role="combobox" aria-haspopup="false" aria-autocomplete="both" autocomplete="off" aria-expanded="false"&gt;<br/>
+          &lt;div id="search_autocomplete" class="search-autocomplete"&gt;&lt;/div&gt;<br/>
+          &lt;div class="nested"&gt;&lt;a class="action advanced" href="https://magento.softwaretestingboard.com/catalogsearch/advanced/" data-action="advanced-search"&gt; Advanced Search &lt;/a&gt;<br/>
+          &lt;/div&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="actions"&gt;&lt;button type="submit" title="Search" class="action search" aria-label="Search" disabled&gt; &lt;span&gt;Search&lt;/span&gt; &lt;/button&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/form&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+     &lt;ul class="compare wrapper"&gt;<br/>
+      &lt;li class="item link compare" data-bind="scope: 'compareProducts'" data-role="compare-products-link"&gt;&lt;a class="action compare no-display" title="Compare Products" data-bind="attr: {'href': compareProducts().listUrl}, css: {'no-display': !compareProducts().count}"&gt; Compare Products &lt;span class="counter qty" data-bind="text: compareProducts().countCaption"&gt;&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+     &lt;/ul&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/header&gt;<br/>
+   &lt;div class="sections nav-sections"&gt;<br/>
+    &lt;div class="section-items nav-sections-items" role="tablist"&gt;<br/>
+     &lt;div class="section-item-title nav-sections-item-title active" data-role="collapsible" role="tab" data-collapsible="true" aria-controls="store.menu" aria-selected="false" aria-expanded="true" tabindex="0"&gt;&lt;a class="nav-sections-item-switch" data-toggle="switch" href="#store.menu"&gt; Menu &lt;/a&gt;<br/>
+     &lt;/div&gt;<br/>
+     &lt;div class="section-item-content nav-sections-item-content" id="store.menu" data-role="content" role="tabpanel" aria-hidden="false"&gt;<br/>
+      &lt;nav class="navigation" data-action="navigation"&gt;<br/>
+       &lt;ul id="ui-id-2" class="ui-menu ui-widget ui-widget-content ui-corner-all" role="menu" tabindex="0"&gt;<br/>
+        &lt;li class="level0 nav-1 category-item first level-top ui-menu-item" role="presentation"&gt;&lt;a href="https://magento.softwaretestingboard.com/what-is-new.html" class="level-top ui-corner-all" id="ui-id-3" tabindex="-1" role="menuitem"&gt;&lt;span&gt;What's New&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;li class="level0 nav-2 category-item level-top parent ui-menu-item" role="presentation"&gt;&lt;a href="https://magento.softwaretestingboard.com/women.html" class="level-top ui-corner-all" aria-haspopup="true" id="ui-id-4" tabindex="-1" role="menuitem"&gt;&lt;span class="ui-menu-icon ui-icon ui-icon-carat-1-e"&gt;&lt;/span&gt;&lt;span&gt;Women&lt;/span&gt;&lt;/a&gt;<br/>
+         &lt;ul class="level0 submenu ui-menu ui-widget ui-widget-content ui-corner-all" role="menu" aria-hidden="true" aria-expanded="false" style="display: none;"&gt;<br/>
+          &lt;li class="level1 nav-2-1 category-item first parent ui-menu-item" role="presentation"&gt;&lt;a href="https://magento.softwaretestingboard.com/women/tops-women.html" aria-haspopup="true" id="ui-id-9" class="ui-corner-all" tabindex="-1" role="menuitem"&gt;&lt;span class="ui-menu-icon ui-icon ui-icon-carat-1-e"&gt;&lt;/span&gt;&lt;span&gt;Tops&lt;/span&gt;&lt;/a&gt;<br/>
+           &lt;ul class="level1 submenu ui-menu ui-widget ui-widget-content ui-corner-all expanded" role="menu" aria-hidden="true" aria-expanded="false" style="display: none;"&gt;<br/>
+            &lt;li class="level2 nav-2-1-1 category-item first ui-menu-item" role="presentation"&gt;&lt;a href="https://magento.softwaretestingboard.com/women/tops-women/jackets-women.html" id="ui-id-11" class="ui-corner-all" tabindex="-1" role="menuitem"&gt;&lt;span&gt;Jackets&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;<br/>
+            &lt;li class="level2 nav-2-1-2 category-item ui-menu-item" role="presentation"&gt;&lt;a href="https://magento.softwaretestingboard.com/women/tops-women/hoodies-and-sweatshirts-women.html" id="ui-id-12" class="ui-corner-all" tabindex="-1" role="menuitem"&gt;&lt;span&gt;Hoodies &amp; Sweatshirts&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;<br/>
+            &lt;li class="level2 nav-2-1-3 category-item ui-menu-item" role="presentation"&gt;&lt;a href="https://magento.softwaretestingboard.com/women/tops-women/tees-women.html" id="ui-id-13" class="ui-corner-all" tabindex="-1" role="menuitem"&gt;&lt;span&gt;Tees&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;<br/>
+            &lt;li class="level2 nav-2-1-4 category-item last ui-menu-item" role="presentation"&gt;&lt;a href="https://magento.softwaretestingboard.com/women/tops-women/tanks-women.html" id="ui-id-14" class="ui-corner-all" tabindex="-1" role="menuitem"&gt;&lt;span&gt;Bras &amp; Tanks&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;<br/>
+           &lt;/ul&gt;&lt;/li&gt;<br/>
+          &lt;li class="level1 nav-2-2 category-item last parent ui-menu-item" role="presentation"&gt;&lt;a href="https://magento.softwaretestingboard.com/women/bottoms-women.html" aria-haspopup="true" id="ui-id-10" class="ui-corner-all" tabindex="-1" role="menuitem"&gt;&lt;span class="ui-menu-icon ui-icon ui-icon-carat-1-e"&gt;&lt;/span&gt;&lt;span&gt;Bottoms&lt;/span&gt;&lt;/a&gt;<br/>
+           &lt;ul class="level1 submenu ui-menu ui-widget ui-widget-content ui-corner-all expanded" role="menu" aria-hidden="true" aria-expanded="false" style="display: none;"&gt;<br/>
+            &lt;li class="level2 nav-2-2-1 category-item first ui-menu-item" role="presentation"&gt;&lt;a href="https://magento.softwaretestingboard.com/women/bottoms-women/pants-women.html" id="ui-id-15" class="ui-corner-all" tabindex="-1" role="menuitem"&gt;&lt;span&gt;Pants&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;<br/>
+            &lt;li class="level2 nav-2-2-2 category-item last ui-menu-item" role="presentation"&gt;&lt;a href="https://magento.softwaretestingboard.com/women/bottoms-women/shorts-women.html" id="ui-id-16" class="ui-corner-all" tabindex="-1" role="menuitem"&gt;&lt;span&gt;Shorts&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;<br/>
+           &lt;/ul&gt;&lt;/li&gt;<br/>
+         &lt;/ul&gt;&lt;/li&gt;<br/>
+        &lt;li class="level0 nav-3 category-item level-top parent ui-menu-item" role="presentation"&gt;&lt;a href="https://magento.softwaretestingboard.com/men.html" class="level-top ui-corner-all" aria-haspopup="true" id="ui-id-5" tabindex="-1" role="menuitem"&gt;&lt;span class="ui-menu-icon ui-icon ui-icon-carat-1-e"&gt;&lt;/span&gt;&lt;span&gt;Men&lt;/span&gt;&lt;/a&gt;<br/>
+         &lt;ul class="level0 submenu ui-menu ui-widget ui-widget-content ui-corner-all" role="menu" aria-hidden="true" aria-expanded="false" style="display: none;"&gt;<br/>
+          &lt;li class="level1 nav-3-1 category-item first parent ui-menu-item" role="presentation"&gt;&lt;a href="https://magento.softwaretestingboard.com/men/tops-men.html" aria-haspopup="true" id="ui-id-17" class="ui-corner-all" tabindex="-1" role="menuitem"&gt;&lt;span class="ui-menu-icon ui-icon ui-icon-carat-1-e"&gt;&lt;/span&gt;&lt;span&gt;Tops&lt;/span&gt;&lt;/a&gt;<br/>
+           &lt;ul class="level1 submenu ui-menu ui-widget ui-widget-content ui-corner-all expanded" role="menu" aria-hidden="true" aria-expanded="false" style="display: none;"&gt;<br/>
+            &lt;li class="level2 nav-3-1-1 category-item first ui-menu-item" role="presentation"&gt;&lt;a href="https://magento.softwaretestingboard.com/men/tops-men/jackets-men.html" id="ui-id-19" class="ui-corner-all" tabindex="-1" role="menuitem"&gt;&lt;span&gt;Jackets&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;<br/>
+            &lt;li class="level2 nav-3-1-2 category-item ui-menu-item" role="presentation"&gt;&lt;a href="https://magento.softwaretestingboard.com/men/tops-men/hoodies-and-sweatshirts-men.html" id="ui-id-20" class="ui-corner-all" tabindex="-1" role="menuitem"&gt;&lt;span&gt;Hoodies &amp; Sweatshirts&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;<br/>
+            &lt;li class="level2 nav-3-1-3 category-item ui-menu-item" role="presentation"&gt;&lt;a href="https://magento.softwaretestingboard.com/men/tops-men/tees-men.html" id="ui-id-21" class="ui-corner-all" tabindex="-1" role="menuitem"&gt;&lt;span&gt;Tees&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;<br/>
+            &lt;li class="level2 nav-3-1-4 category-item last ui-menu-item" role="presentation"&gt;&lt;a href="https://magento.softwaretestingboard.com/men/tops-men/tanks-men.html" id="ui-id-22" class="ui-corner-all" tabindex="-1" role="menuitem"&gt;&lt;span&gt;Tanks&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;<br/>
+           &lt;/ul&gt;&lt;/li&gt;<br/>
+          &lt;li class="level1 nav-3-2 category-item last parent ui-menu-item" role="presentation"&gt;&lt;a href="https://magento.softwaretestingboard.com/men/bottoms-men.html" aria-haspopup="true" id="ui-id-18" class="ui-corner-all" tabindex="-1" role="menuitem"&gt;&lt;span class="ui-menu-icon ui-icon ui-icon-carat-1-e"&gt;&lt;/span&gt;&lt;span&gt;Bottoms&lt;/span&gt;&lt;/a&gt;<br/>
+           &lt;ul class="level1 submenu ui-menu ui-widget ui-widget-content ui-corner-all expanded" role="menu" aria-hidden="true" aria-expanded="false" style="display: none;"&gt;<br/>
+            &lt;li class="level2 nav-3-2-1 category-item first ui-menu-item" role="presentation"&gt;&lt;a href="https://magento.softwaretestingboard.com/men/bottoms-men/pants-men.html" id="ui-id-23" class="ui-corner-all" tabindex="-1" role="menuitem"&gt;&lt;span&gt;Pants&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;<br/>
+            &lt;li class="level2 nav-3-2-2 category-item last ui-menu-item" role="presentation"&gt;&lt;a href="https://magento.softwaretestingboard.com/men/bottoms-men/shorts-men.html" id="ui-id-24" class="ui-corner-all" tabindex="-1" role="menuitem"&gt;&lt;span&gt;Shorts&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;<br/>
+           &lt;/ul&gt;&lt;/li&gt;<br/>
+         &lt;/ul&gt;&lt;/li&gt;<br/>
+        &lt;li class="level0 nav-4 category-item level-top parent ui-menu-item" role="presentation"&gt;&lt;a href="https://magento.softwaretestingboard.com/gear.html" class="level-top ui-corner-all" aria-haspopup="true" id="ui-id-6" tabindex="-1" role="menuitem"&gt;&lt;span class="ui-menu-icon ui-icon ui-icon-carat-1-e"&gt;&lt;/span&gt;&lt;span&gt;Gear&lt;/span&gt;&lt;/a&gt;<br/>
+         &lt;ul class="level0 submenu ui-menu ui-widget ui-widget-content ui-corner-all" role="menu" aria-hidden="true" aria-expanded="false" style="display: none;"&gt;<br/>
+          &lt;li class="level1 nav-4-1 category-item first ui-menu-item" role="presentation"&gt;&lt;a href="https://magento.softwaretestingboard.com/gear/bags.html" id="ui-id-25" class="ui-corner-all" tabindex="-1" role="menuitem"&gt;&lt;span&gt;Bags&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;<br/>
+          &lt;li class="level1 nav-4-2 category-item ui-menu-item" role="presentation"&gt;&lt;a href="https://magento.softwaretestingboard.com/gear/fitness-equipment.html" id="ui-id-26" class="ui-corner-all" tabindex="-1" role="menuitem"&gt;&lt;span&gt;Fitness Equipment&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;<br/>
+          &lt;li class="level1 nav-4-3 category-item last ui-menu-item" role="presentation"&gt;&lt;a href="https://magento.softwaretestingboard.com/gear/watches.html" id="ui-id-27" class="ui-corner-all" tabindex="-1" role="menuitem"&gt;&lt;span&gt;Watches&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;/ul&gt;&lt;/li&gt;<br/>
+        &lt;li class="level0 nav-5 category-item level-top parent ui-menu-item" role="presentation"&gt;&lt;a href="https://magento.softwaretestingboard.com/training.html" class="level-top ui-corner-all" aria-haspopup="true" id="ui-id-7" tabindex="-1" role="menuitem"&gt;&lt;span class="ui-menu-icon ui-icon ui-icon-carat-1-e"&gt;&lt;/span&gt;&lt;span&gt;Training&lt;/span&gt;&lt;/a&gt;<br/>
+         &lt;ul class="level0 submenu ui-menu ui-widget ui-widget-content ui-corner-all" role="menu" aria-hidden="true" aria-expanded="false" style="display: none;"&gt;<br/>
+          &lt;li class="level1 nav-5-1 category-item first last ui-menu-item" role="presentation"&gt;&lt;a href="https://magento.softwaretestingboard.com/training/training-video.html" id="ui-id-28" class="ui-corner-all" tabindex="-1" role="menuitem"&gt;&lt;span&gt;Video Download&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;/ul&gt;&lt;/li&gt;<br/>
+        &lt;li class="level0 nav-6 category-item last level-top ui-menu-item" role="presentation"&gt;&lt;a href="https://magento.softwaretestingboard.com/sale.html" class="level-top ui-corner-all" id="ui-id-8" tabindex="-1" role="menuitem"&gt;&lt;span&gt;Sale&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;<br/>
+       &lt;/ul&gt;<br/>
+      &lt;/nav&gt;<br/>
+     &lt;/div&gt;<br/>
+     &lt;div class="section-item-title nav-sections-item-title" data-role="collapsible" role="tab" data-collapsible="true" aria-controls="store.links" aria-selected="false" aria-expanded="false" tabindex="0"&gt;&lt;a class="nav-sections-item-switch" data-toggle="switch" href="#store.links"&gt; Account &lt;/a&gt;<br/>
+     &lt;/div&gt;<br/>
+     &lt;div class="section-item-content nav-sections-item-content" id="store.links" data-role="content" role="tabpanel" aria-hidden="true" style="display: none;"&gt;<br/>
+      &lt;ul class="header links"&gt;<br/>
+       &lt;li class="greet welcome" data-bind="scope: 'customer'"&gt;&lt;!-- ko if: customer().fullname  --&gt;&lt;!-- /ko --&gt; &lt;!-- ko ifnot: customer().fullname  --&gt; &lt;span class="not-logged-in" data-bind="html:&quot;Default welcome msg!&quot;"&gt;Default welcome msg!&lt;/span&gt; &lt;!-- /ko --&gt;&lt;/li&gt;<br/>
+       &lt;li class="authorization-link" data-label="or"&gt;&lt;a href="https://magento.softwaretestingboard.com/customer/account/login/referer/aHR0cHM6Ly9tYWdlbnRvLnNvZnR3YXJldGVzdGluZ2JvYXJkLmNvbS9jdXN0b21lci9hY2NvdW50L2NyZWF0ZS8%2C/"&gt; Sign In &lt;/a&gt;&lt;/li&gt;<br/>
+       &lt;li&gt;&lt;a href="https://magento.softwaretestingboard.com/customer/account/create/"&gt;Create an Account&lt;/a&gt;&lt;/li&gt;<br/>
+      &lt;/ul&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/div&gt;<br/>
+   &lt;main id="maincontent" class="page-main"&gt;<br/>
+    &lt;a id="contentarea" tabindex="-1"&gt;&lt;/a&gt;<br/>
+    &lt;div class="page-title-wrapper"&gt;<br/>
+     &lt;h1 class="page-title"&gt;&lt;span class="base" data-ui-id="page-title-wrapper"&gt;Create New Customer Account&lt;/span&gt;&lt;/h1&gt;<br/>
+    &lt;/div&gt;<br/>
+    &lt;div class="page messages"&gt;<br/>
+     &lt;div data-placeholder="messages"&gt;&lt;/div&gt;<br/>
+     &lt;div data-bind="scope: 'messages'"&gt;&lt;!-- ko if: cookieMessages && cookieMessages.length &gt; 0 --&gt;&lt;!-- /ko --&gt; &lt;!-- ko if: messages().messages && messages().messages.length &gt; 0 --&gt;&lt;!-- /ko --&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+    &lt;div class="columns"&gt;<br/>
+     &lt;div class="column main"&gt;<br/>
+      &lt;input name="form_key" type="hidden" value="dXOpSpzCC9fbUDWn"&gt;<br/>
+      &lt;div id="authenticationPopup" data-bind="scope:'authenticationPopup'" style="display: none;"&gt;<br/>
+       &lt;script&gt;<br/>
+        window.authenticationPopup = {"autocomplete":"off","customerRegisterUrl":"https:\/\/magento.softwaretestingboard.com\/customer\/account\/create\/","customerForgotPasswordUrl":"https:\/\/magento.softwaretestingboard.com\/customer\/account\/forgotpassword\/","baseUrl":"https:\/\/magento.softwaretestingboard.com\/"};<br/>
+    &lt;/script&gt;&lt;!-- ko template: getTemplate() --&gt; &lt;!-- /ko --&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;form class="form create account form-create-account" action="https://magento.softwaretestingboard.com/customer/account/createpost/" method="post" id="form-validate" enctype="multipart/form-data" autocomplete="off" novalidate&gt;&lt;input name="form_key" type="hidden" value="dXOpSpzCC9fbUDWn"&gt;<br/>
+       &lt;fieldset class="fieldset create info"&gt;&lt;legend class="legend"&gt;&lt;span&gt;Personal Information&lt;/span&gt;&lt;/legend&gt;&lt;br&gt;&lt;input type="hidden" name="success_url" value=""&gt; &lt;input type="hidden" name="error_url" value=""&gt;<br/>
+        &lt;div class="field field-name-firstname required"&gt;&lt;label class="label" for="firstname"&gt;&lt;span&gt;First Name&lt;/span&gt;&lt;/label&gt;<br/>
+         &lt;div class="control"&gt;&lt;input type="text" id="firstname" name="firstname" value="" title="First Name" class="input-text required-entry" data-validate="{required:true}" autocomplete="off" aria-required="true"&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="field field-name-lastname required"&gt;&lt;label class="label" for="lastname"&gt;&lt;span&gt;Last Name&lt;/span&gt;&lt;/label&gt;<br/>
+         &lt;div class="control"&gt;&lt;input type="text" id="lastname" name="lastname" value="" title="Last Name" class="input-text required-entry" data-validate="{required:true}" autocomplete="off" aria-required="true"&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="field choice newsletter"&gt;&lt;input type="checkbox" name="is_subscribed" title="Sign Up for Newsletter" value="1" id="is_subscribed" class="checkbox"&gt; &lt;label for="is_subscribed" class="label"&gt;&lt;span&gt;Sign Up for Newsletter&lt;/span&gt;&lt;/label&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/fieldset&gt;<br/>
+       &lt;fieldset class="fieldset create account" data-hasrequired="* Required Fields"&gt;&lt;legend class="legend"&gt;&lt;span&gt;Sign-in Information&lt;/span&gt;&lt;/legend&gt;&lt;br&gt;<br/>
+        &lt;div class="field required"&gt;&lt;label for="email_address" class="label"&gt;&lt;span&gt;Email&lt;/span&gt;&lt;/label&gt;<br/>
+         &lt;div class="control"&gt;&lt;input type="email" name="email" autocomplete="email" id="email_address" value="" title="Email" class="input-text" data-validate="{required:true, 'validate-email':true}" aria-required="true"&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="field password required"&gt;&lt;label for="password" class="label"&gt;&lt;span&gt;Password&lt;/span&gt;&lt;/label&gt;<br/>
+         &lt;div class="control"&gt;&lt;input type="password" name="password" id="password" title="Password" class="input-text valid" data-password-min-length="8" data-password-min-character-sets="3" data-validate="{required:true, 'validate-customer-password':true}" autocomplete="off" aria-required="true" aria-invalid="true" aria-describedby="password-error"&gt;<br/>
+          &lt;div for="password" generated="true" class="mage-error" id="password-error" style="display: none;"&gt;<br/>
+           Minimum length of this field must be equal or greater than 8 symbols. Leading and trailing spaces will be ignored.<br/>
+          &lt;/div&gt;<br/>
+          &lt;div id="password-strength-meter-container" data-role="password-strength-meter" aria-live="polite" class="password-strong"&gt;<br/>
+           &lt;div id="password-strength-meter" class="password-strength-meter"&gt;<br/>
+            Password Strength: &lt;span id="password-strength-meter-label" data-role="password-strength-meter-label"&gt;Strong&lt;/span&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="field confirmation required"&gt;&lt;label for="password-confirmation" class="label"&gt;&lt;span&gt;Confirm Password&lt;/span&gt;&lt;/label&gt;<br/>
+         &lt;div class="control"&gt;&lt;input type="password" name="password_confirmation" title="Confirm Password" id="password-confirmation" class="input-text" data-validate="{required:true, equalTo:'#password'}" autocomplete="off" aria-required="true"&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/fieldset&gt;<br/>
+       &lt;div class="actions-toolbar"&gt;<br/>
+        &lt;div class="primary"&gt;&lt;button type="submit" class="action submit primary" title="Create an Account"&gt;&lt;span&gt;Create an Account&lt;/span&gt;&lt;/button&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="secondary"&gt;&lt;a class="action back" href="https://magento.softwaretestingboard.com/customer/account/login/referer/aHR0cHM6Ly9tYWdlbnRvLnNvZnR3YXJldGVzdGluZ2JvYXJkLmNvbS9jdXN0b21lci9hY2NvdW50L2NyZWF0ZS8%2C/"&gt;&lt;span&gt;Back&lt;/span&gt;&lt;/a&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/form&gt;<br/>
+      &lt;script&gt;<br/>
+require([<br/>
+    'jquery',<br/>
+    'mage/mage'<br/>
+], function($){<br/>
+<br/>
+    var dataForm = $('#form-validate');<br/>
+    var ignore = null;<br/>
+<br/>
+    dataForm.mage('validation', {<br/>
+            ignore: ignore ? ':hidden:not(' + ignore + ')' : ':hidden'<br/>
+        }).find('input:text').attr('autocomplete', 'off');<br/>
+});<br/>
+&lt;/script&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/main&gt;<br/>
+   &lt;footer class="page-footer"&gt;<br/>
+    &lt;div class="footer content"&gt;<br/>
+     &lt;div class="block newsletter"&gt;<br/>
+      &lt;div class="title"&gt;<br/>
+       &lt;strong&gt;Newsletter&lt;/strong&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="content"&gt;<br/>
+       &lt;form class="form subscribe" novalidate action="https://magento.softwaretestingboard.com/newsletter/subscriber/new/" method="post" id="newsletter-validate-detail"&gt;<br/>
+        &lt;div class="field newsletter"&gt;<br/>
+         &lt;div class="control"&gt;&lt;label for="newsletter"&gt; &lt;span class="label"&gt; Sign Up for Our Newsletter: &lt;/span&gt; &lt;input name="email" type="email" id="newsletter" placeholder="Enter your email address" data-validate="{required:true, 'validate-email':true}"&gt; &lt;/label&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="actions"&gt;&lt;button class="action subscribe primary" title="Subscribe" type="submit" aria-label="Subscribe"&gt; &lt;span&gt;Subscribe&lt;/span&gt; &lt;/button&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/form&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+     &lt;div class="links"&gt;<br/>
+      &lt;div class="widget block block-static-block"&gt;<br/>
+       &lt;ul class="footer links"&gt;<br/>
+        &lt;li class="nav item"&gt;&lt;a href="https://softwaretestingboard.com/product-category/selenium-video-courses/"&gt;Selenium Video Courses&lt;/a&gt;&lt;/li&gt;<br/>
+       &lt;/ul&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+     &lt;ul class="footer links"&gt;<br/>
+      &lt;li class="nav item"&gt;&lt;a href="https://magento.softwaretestingboard.com/search/term/popular/"&gt;Search Terms&lt;/a&gt;&lt;/li&gt;<br/>
+      &lt;li class="nav item"&gt;&lt;a href="https://magento.softwaretestingboard.com/privacy-policy-cookie-restriction-mode/"&gt;Privacy and Cookie Policy&lt;/a&gt;&lt;/li&gt;<br/>
+      &lt;li class="nav item"&gt;&lt;a href="https://magento.softwaretestingboard.com/catalogsearch/advanced/" data-action="advanced-search"&gt;Advanced Search&lt;/a&gt;&lt;/li&gt;<br/>
+      &lt;li class="nav item"&gt;&lt;a href="https://magento.softwaretestingboard.com/sales/guest/form/"&gt;Orders and Returns&lt;/a&gt;&lt;/li&gt;<br/>
+      &lt;li class="nav item"&gt;&lt;a href="https://magento.softwaretestingboard.com/contact/"&gt;Contact Us&lt;/a&gt;&lt;/li&gt;<br/>
+     &lt;/ul&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/footer&gt;&lt;small class="copyright"&gt; &lt;span&gt;Copyright © 2013-present Magento, Inc. All rights reserved.&lt;/span&gt; &lt;/small&gt;<br/>
+  &lt;/div&gt;<br/>
+  &lt;div class="modals-wrapper"&gt;<br/>
+   &lt;!--<br/>
+/**<br/>
+ * Copyright © Magento, Inc. All rights reserved.<br/>
+ * See COPYING.txt for license details.<br/>
+ */<br/>
+--&gt;<br/>
+   &lt;aside role="dialog" class="modal-popup popup-authentication<br/>
+               modal-slide<br/>
+               _inner-scroll" aria-describedby="modal-content-17" data-role="modal" data-type="popup" tabindex="0"&gt;<br/>
+    &lt;div data-role="focusable-start" tabindex="0"&gt;&lt;/div&gt;<br/>
+    &lt;div class="modal-inner-wrap" data-role="focusable-scope"&gt;<br/>
+     &lt;header class="modal-header"&gt;&lt;button class="action-close" data-role="closeBtn" type="button"&gt; &lt;span&gt;Close&lt;/span&gt; &lt;/button&gt;<br/>
+     &lt;/header&gt;<br/>
+     &lt;div id="modal-content-17" class="modal-content" data-role="content"&gt;<br/>
+      &lt;div class="block-authentication" data-bind="afterRender: setModalElement, blockLoader: isLoading" style=""&gt;<br/>
+       &lt;div class="block block-new-customer" data-bind="attr: {'data-label': $t('or')}" data-label="or"&gt;<br/>
+        &lt;div class="block-title"&gt;&lt;strong id="block-new-customer-heading" role="heading" aria-level="2" data-bind="i18n: 'Checkout as a new customer'"&gt;Checkout as a new customer&lt;/strong&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="block-content" aria-labelledby="block-new-customer-heading"&gt;<br/>
+         &lt;p data-bind="i18n: 'Creating an account has many benefits:'"&gt;Creating an account has many benefits:&lt;/p&gt;<br/>
+         &lt;ul&gt;<br/>
+          &lt;li data-bind="i18n: 'See order and shipping status'"&gt;See order and shipping status&lt;/li&gt;<br/>
+          &lt;li data-bind="i18n: 'Track order history'"&gt;Track order history&lt;/li&gt;<br/>
+          &lt;li data-bind="i18n: 'Check out faster'"&gt;Check out faster&lt;/li&gt;<br/>
+         &lt;/ul&gt;<br/>
+         &lt;div class="actions-toolbar"&gt;<br/>
+          &lt;div class="primary"&gt;&lt;a class="action action-register primary" data-bind="attr: {href: registerUrl}" href="https://magento.softwaretestingboard.com/customer/account/create/"&gt; &lt;span data-bind="i18n: 'Create an Account'"&gt;Create an Account&lt;/span&gt; &lt;/a&gt;<br/>
+          &lt;/div&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="block block-customer-login" data-bind="attr: {'data-label': $t('or')}" data-label="or"&gt;<br/>
+        &lt;div class="block-title"&gt;&lt;strong id="block-customer-login-heading" role="heading" aria-level="2" data-bind="i18n: 'Checkout using your account'"&gt;Checkout using your account&lt;/strong&gt;<br/>
+        &lt;/div&gt;&lt;!-- ko foreach: getRegion('messages') --&gt; &lt;!-- ko template: getTemplate() --&gt;<br/>
+        &lt;div data-role="checkout-messages" class="messages" data-bind="visible: isVisible(), click: removeAll"&gt;&lt;!-- ko foreach: messageContainer.getErrorMessages() --&gt;&lt;!--/ko--&gt; &lt;!-- ko foreach: messageContainer.getSuccessMessages() --&gt;&lt;!--/ko--&gt;<br/>
+        &lt;/div&gt;&lt;!-- /ko --&gt; &lt;!--/ko--&gt; &lt;!-- ko foreach: getRegion('before') --&gt;&lt;!-- /ko --&gt;<br/>
+        &lt;div class="block-content" aria-labelledby="block-customer-login-heading"&gt;<br/>
+         &lt;form class="form form-login" method="post" data-bind="event: {submit: login }" id="login-form"&gt;<br/>
+          &lt;div class="fieldset login" data-bind="attr: {'data-hasrequired': $t('* Required Fields')}" data-hasrequired="* Required Fields"&gt;<br/>
+           &lt;div class="field email required"&gt;&lt;label class="label" for="customer-email"&gt;&lt;span data-bind="i18n: 'Email Address'"&gt;Email Address&lt;/span&gt;&lt;/label&gt;<br/>
+            &lt;div class="control"&gt;&lt;input name="username" id="customer-email" type="email" class="input-text" data-mage-init="{&quot;mage/trim-input&quot;:{}}" data-bind="attr: {autocomplete: autocomplete}" data-validate="{required:true, 'validate-email':true}" autocomplete="off"&gt;<br/>
+            &lt;/div&gt;<br/>
+           &lt;/div&gt;<br/>
+           &lt;div class="field password required"&gt;&lt;label for="pass" class="label"&gt;&lt;span data-bind="i18n: 'Password'"&gt;Password&lt;/span&gt;&lt;/label&gt;<br/>
+            &lt;div class="control"&gt;&lt;input name="password" type="password" class="input-text" id="pass" data-bind="attr: {autocomplete: autocomplete}" data-validate="{required:true}" autocomplete="off"&gt;<br/>
+            &lt;/div&gt;<br/>
+           &lt;/div&gt;&lt;!-- ko foreach: getRegion('additional-login-form-fields') --&gt; &lt;!-- ko template: getTemplate() --&gt; &lt;input name="captcha_form_id" type="hidden" data-bind="value: formId,  attr: {'data-scope': dataScope}" value="user_login" data-scope=""&gt; &lt;!-- ko if: (isRequired() && getIsVisible())--&gt;&lt;!-- /ko --&gt; &lt;!-- /ko --&gt; &lt;!-- /ko --&gt;<br/>
+           &lt;div class="actions-toolbar"&gt;&lt;input name="context" type="hidden" value="checkout"&gt;<br/>
+            &lt;div class="primary"&gt;&lt;button type="submit" class="action action-login secondary" name="send" id="send2"&gt; &lt;span data-bind="i18n: 'Sign In'"&gt;Sign In&lt;/span&gt; &lt;/button&gt;<br/>
+            &lt;/div&gt;<br/>
+            &lt;div class="secondary"&gt;&lt;a class="action" data-bind="attr: {href: forgotPasswordUrl}" href="https://magento.softwaretestingboard.com/customer/account/forgotpassword/"&gt; &lt;span data-bind="i18n: 'Forgot Your Password?'"&gt;Forgot Your Password?&lt;/span&gt; &lt;/a&gt;<br/>
+            &lt;/div&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;<br/>
+         &lt;/form&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+    &lt;div data-role="focusable-end" tabindex="0"&gt;&lt;/div&gt;<br/>
+   &lt;/aside&gt;<br/>
+  &lt;/div&gt;<br/>
+ &lt;/body&gt;<br/>
+&lt;/html&gt;</code></pre></div></body></html>

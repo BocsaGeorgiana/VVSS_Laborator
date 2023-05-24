@@ -1,0 +1,19 @@
+
+H
+java:S2699,"-Add at least one assertion to this test case.(”ûÉ¬úÿÿÿÿ
+H
+java:S26998"-Add at least one assertion to this test case.(ğ„“§ÿÿÿÿÿ
+C
+java:S2699Q"-Add at least one assertion to this test case.(¶ˆê
+H
+java:S2699^"-Add at least one assertion to this test case.(Í˜å¼ûÿÿÿÿ
+H
+java:S2699x"-Add at least one assertion to this test case.(ÂÙıÿÿÿÿ
+I
+java:S2699"-Add at least one assertion to this test case.(²´ü‡úÿÿÿÿ
+G
+java:S5967^",Remove one of these conflicting annotations.(Í˜å¼ûÿÿÿÿ
+z
+java:S1607"^Either add an explanation about why this test is skipped or remove the "@Disabled" annotation.(²´ü‡úÿÿÿÿ
+y
+java:S5778Ã"bRefactor the code of the lambda to have only one invocation possibly throwing a runtime exception.(’Úò
